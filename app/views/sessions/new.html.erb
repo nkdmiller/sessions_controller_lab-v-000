@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 
 <form method='post'>
   <input name='name'>
   <input type='submit' value='login'>
 </form>
+=======
+<% if session[:username] %>
+<form method='post'>
+  <input name='username'>
+  <input type='submit' value='login'>
+</form>
+<%else%>
+<%= "hi, #{session[:username]}"%>
+<%end%>
+>>>>>>> ba2161ed72631aa038c26307f0caf06a73702636

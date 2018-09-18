@@ -14,5 +14,6 @@ class SessionsController < ApplicationController
     def destroy
       session.delete :name
       redirect_to '/'
+        # nothing to do here!
     end
 end
